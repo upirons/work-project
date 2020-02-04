@@ -136,7 +136,8 @@ public class MDP_Preprocess_ModifyXMLFile {
                 DOMSource source = new DOMSource(doc);
                 StreamResult result = new StreamResult(new File(newFilepath));
                 transformer.transform(source, result);
-
+                
+                // Log
                 System.out.println("Done");
             }
 
